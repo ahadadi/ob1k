@@ -18,14 +18,4 @@ public interface MetricFactory {
   Meter createMeter(String component, String methodName, String eventType);
 
   Histogram createHistogram(String component, String methodName, boolean biased);
-
-// TODO the commented out methods were removed because they are slightly OB related, and will make the transition to metrics 3 harder
-
-//  Timer createTimer(String component, String methodName, MetricsVerbosityLevel metricsVerbosityLevel);
-//
-//  Histogram createHistogram(String component, String methodName, boolean biased, MetricsVerbosityLevel metricsVerbosityLevel);
-//
-//  void createStatefulGauge(String component, String methodName, GaugeStateHolder monitoredObject);
-//
-//  public <T> SettableGauge<T> createManualUpdateGauge(final String component, final String methodName, T value);
 }
